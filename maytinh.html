@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>May Tinh</title>
+         <link rel="stylesheet" href="maytinh.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="ketqua">
+               
+            </div>
+            <br>
+            <br>
+            <div id="bangtinh">
+            <button onclick="hehe0()" id="so"><b>0</b></button>
+            <button onclick="hehe1()" id="so"><b>1</b></button>
+            <button onclick="hehe2()" id="so"><b>2</b></button>
+            <button onclick="hehe3()" id="so"><b>3</b></button>
+            <br>
+            <button onclick="hehe4()" id="so"><b>4</b></button>
+            <button onclick="hehe5()" id="so"><b>5</b></button>
+            <button onclick="hehe6()" id="so"><b>6</b></button>
+            <button onclick="hehe7()" id="so"><b>7</b></button>
+            <br>
+            <button onclick="hehe8()" id="so"><b>8</b></button>
+            <button onclick="hehe9()" id="so"><b>9</b></button>
+            <br><br>
+                <div id="pheptinh">
+                    <button class="dau" onclick="hehecong()" id="daucong"><b>+</b></button>
+                    <button class="dau" onclick="hehetru()" id="dautru"><b>-</b></button>
+                    <button class="dau" onclick="hehenhan()" id="daunhan"><b>*</b></button>
+                    <button class="dau" onclick="hehechia()" id="dauchia"><b>/</b></button>
+                    <br><br>
+                    <button class="dau" onclick="hehephay()" id="phay"><b>,</b></button>
+                    <button class="dau" onclick="ngoactrai()" id="ngoactrai"><b>(</b></button>
+                    <button class="dau" onclick="ngoacphai()" id="ngoacphai"><b>)</b></button>
+                    <button class="dau" onclick="hehebang()" id="daubang"><b>=</b></button>
+                    <br><br>
+                    <button class="dau" onclick="hehexoa()" id="xoa"><b>AC</b></button>
+                    <button class="dau" onclick="hehexoa1()" id="xoa1"><b>DEL</b></button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var a = new Array(100);
+        function hehe0(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '0';
+        }
+        function hehe1(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '1';
+        }
+        function hehe2(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '2';
+        }
+        function hehe3(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '3';
+        }
+        function hehe4(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '4';
+        }
+        function hehe5(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '5';
+        }
+        function hehe6(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '6';
+        }
+        function hehe7(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '7';
+        }
+        function hehe8(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '8';
+        }
+        function hehe9(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML + '9';
+        }
+        function hehecong(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '+';
+        }
+        function hehetru(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '-';
+        }
+        function hehenhan(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '*';
+        }
+        function hehechia(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '/';
+        }
+        function ngoacphai(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + ')';
+        }
+        function ngoactrai(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '(';
+        }
+        function hehebang(){
+            var b = document.getElementById("ketqua");
+             b.innerHTML = eval(b.innerHTML);
+        }
+        function hehexoa(){
+            var b = document.getElementById("ketqua");
+             b.innerHTML = '';
+        }
+        function hehexoa1(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML = b.innerHTML.substring(0,b.innerHTML.length - 1);
+        }
+        function hehephay(){
+            var b = document.getElementById("ketqua");
+            b.innerHTML =  b.innerHTML + '.';
+        }
+    </script>
+</html>
